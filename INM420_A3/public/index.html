@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merriam-Webster Dictionary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f9f9f9; /* Slightly off-white background for better contrast */
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            border: 1px solid #ccc; /* Add a border to input and button */
+            border-radius: 5px; /* Rounded corners */
+        }
+        button {
+            background-color: #4CAF50; /* Green background for the button */
+            color: white; /* White text color */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        .definition {
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 15px;
+            border: 1px solid #ddd; /* Border around the definition area */
+            background-color: #fff; /* White background for the definition */
+            border-radius: 5px; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <h1>Merriam-Webster Dictionary</h1>
+    <p>Enter a word to search:</p>
+    <input type="text" id="wordInput" placeholder="Type a word...">
+    <button onclick="fetchDefinition()">Get Definition</button>
+
+    <div class="definition" id="definition"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
